@@ -176,6 +176,7 @@ async def on_reaction_add(reaction, author):
 a = monster(5)
 @client.event
 async def on_message(message):
+    global a
     if str(message.author) in str(stat):
         pass
     else:
@@ -183,6 +184,7 @@ async def on_message(message):
     if message.content.lower().startswith("!start in ") and message.author.guild_permissions.administrator:
         await message.channel.send(embed= discord.Embed(description="hou hou des monstres apparait dans les channel indiqué"))
         ghost_list.append(message.channel_mentions)
+        a = monster(5)
         a.start()
     elif message.content.lower().startswith("!stop") and message.author.guild_permissions.administrator:
         a.stop = False
