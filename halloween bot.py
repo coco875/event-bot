@@ -49,8 +49,9 @@ class monster(threading.Thread):
         threading.Thread.__init__(self)
         self.t = time.time()
         self.s = s
+        self.stop = True
     def run(self):
-        while True:
+        while self.stop:
             if self.t+self.s<time.time():
                 self.t = time.time()
                 for ghostin in ghost_list:
@@ -172,7 +173,7 @@ async def on_reaction_add(reaction, author):
             mon_fichier = open("stat", "w", encoding="utf-8")
             mon_fichier.write(text2)
             mon_fichier.close
-
+a = monster(5)
 @client.event
 async def on_message(message):
     if str(message.author) in str(stat):
@@ -182,9 +183,13 @@ async def on_message(message):
     if message.content.lower().startswith("!start in ") and message.author.guild_permissions.administrator:
         await message.channel.send(embed= discord.Embed(description="hou hou des monstres apparait dans les channel indiqué"))
         ghost_list.append(message.channel_mentions)
-        a = monster(5)
         a.start()
-    elif "!reset stat" in message.content.lower() and str(message.author) == "coco#8012":
+    elif message.content.lower().startswith("!stop") and message.author.guild_permissions.administrator:
+        a.stop = False
+        await message.channel.send(embed= discord.Embed(description="fin de l'événement"))
+    elif message.content.lower().startswith("!help"):
+        await message.channel.send(embed= discord.Embed(description="!stat \ndonne le nombre de monstré capturé et le point\n!lb\nle leaderboard si vous rajouter un monstre vous aurez le classement pour ce monstre"))
+    elif "!reset stat" in message.content.lower() and message.author.guild_permissions.administrator:
         for pseudo in stat:
             pseudo[1] = "0"
             pseudo[2] = "0"
@@ -226,7 +231,7 @@ async def on_message(message):
                     
         if azerty != 1:
             await message.channel.send(embed= discord.Embed(description="soit je le connais pas ou soit il a pas encore dit de phrase"))
-    elif message.content.lower().startswith("!lb fantôme "):
+    elif message.content.lower().startswith("!lb fantôme"):
         statclass = sorted(stat, key=lambda student: int(student[2]), reverse= True)
         await message.channel.send(embed= discord.Embed(description=f"le classement est :\n1 er {statclass[0][0]} avec {statclass[0][2]}\n2 eme {statclass[1][0]} avec {statclass[1][2]}\n3 eme {statclass[2][0]} avec {statclass[2][2]}\n4 eme {statclass[3][0]} avec {statclass[3][2]}\n5 eme {statclass[4][0]} avec {statclass[4][2]}\n6 eme {statclass[5][0]} avec {statclass[5][2]}\n7 eme {statclass[6][0]} avec {statclass[6][2]}\n8 eme {statclass[7][0]} avec {statclass[7][2]}\n9 eme {statclass[8][0]} avec {statclass[8][2]}\n10 eme {statclass[9][0]} avec {statclass[9][2]}"))
     elif message.content.lower().startswith("!lb vampire"):
