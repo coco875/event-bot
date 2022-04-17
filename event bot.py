@@ -16,7 +16,7 @@ with open("type.json", "r", encoding='utf-8') as f:
     type2 = data["type2"]
     type3 = data["type3"]
 
-TOKEN = 'Njg3MzMwOTg2OTIwNjQwNTE0.XmkM3Q.4XO2g6C0hkOc6RB6Mh1IA0T_ztM'
+TOKEN = json.load(open("login.json", "r"))["token"]
 client = discord.Client()
 
 ghost_list = []
