@@ -1,1 +1,1 @@
-worker: python "halloween bot.py"
+worker: python "event bot.py"
