@@ -1,0 +1,69 @@
+{
+    "halloween" : {
+        "type1" : {
+            "name" : "Démon",
+            "url" : ["https://media1.tenor.com/images/b2ce897ba83f0f2453add0a2631e7532/tenor.gif?itemid=15952632",
+                "https://media1.tenor.com/images/5f0785a904d3ea86edb6733b731974a1/tenor.gif?itemid=12666062",
+                "https://media.melty.fr/article-4018245-ratio15_720-f5/media.jpg",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTlyiUhKbNAGAF8yvWsthZXlEJv_-HnLz_13w&usqp=CAU"],
+            "emoji" : "👹",
+            "points" : 10
+        },
+        "type2" : {
+            "name" : "Vampire",
+            "url" : ["https://teammanga.fr/wp-content/uploads/2020/08/noblesse-1.jpg",
+                "https://149360821.v2.pressablecdn.com/wp-content/uploads/2017/11/Plumber-Vampire.jpg",
+                "https://static.lpnt.fr/images/2020/10/21/20899750lpw-20900955-article-jpg_7430520_1250x625.jpg",
+                "https://static.wikia.nocookie.net/bakemonogatari1645/images/1/17/Onomonogatari_bluray.jpg/revision/latest/top-crop/width/300/height/300?cb=20160711035646",
+                "https://images-na.ssl-images-amazon.com/images/I/51O61yEQSfL._AC_.jpg",
+                "https://pm1.narvii.com/7549/30487661d20c189be4c943ac09a1962903019d42r1-555-685v2_hq.jpg",
+                "https://cdn.imgbin.com/7/17/9/imgbin-sonic-and-the-secret-rings-sonic-the-hedgehog-amy-rose-vampire-legendary-creature-others-x8LkqwpaC6LBgT3nWHp5bKbPX.jpg",
+                "https://static.wikia.nocookie.net/fireemblem/images/d/d5/ShuraPortrait.png/revision/latest?cb=20150712180545&path-prefix=fr"],
+            "emoji" : "🧅",
+            "points" : 3
+        },
+        "type3" : {
+            "name" : "Fantôme",
+            "url" : ["https://static.vecteezy.com/ti/vecteur-libre/p1/1999137-halloween-blanc-fantome-dessin-anime-vecteur-conception-gratuit-vectoriel.jpg",
+            "https://lh3.googleusercontent.com/WQny7hia6hGcJk7m8HK2CBD-qIFtkMRrU_7U7vv3FOdLc02ZxCcXeJE225reWGuAHTG1EuAdh4RE67Gt8Vy9=w1600-h789",
+            "https://static.wikia.nocookie.net/mansionluigi/images/2/28/157283029117635715.png/revision/latest?cb=20191104012009",
+            "https://static.wikia.nocookie.net/mario/images/9/9f/Boo_%21.png/revision/latest?cb=20130626141706&path-prefix=fr",
+            "https://i.pinimg.com/originals/99/3e/c6/993ec6139c72b771eb5a9b727ba826da.jpg",
+            "https://vignette.wikia.nocookie.net/villains-fr/images/6/6c/7e60648f75725bcb869e49f0f96581a6.png/revision/latest?cb=20200519122959&path-prefix=fr",
+            "https://ih1.redbubble.net/image.1679365686.0212/st,small,507x507-pad,600x600,f8f8f8.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQsEM7Ly52A8GykgOLWwmo18-ltHuQw3jmknw&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT7XDfREtFHmMFMACU32Tvp4xUyKl-iPD2-EA&usqp=CAU",
+            "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Pok%C3%A9mon_Haunter_art.png/220px-Pok%C3%A9mon_Haunter_art.png",
+            "https://cdn.bulbagarden.net/upload/a/a5/608Lampent.png"],
+            "emoji" : "👻",
+            "points" : 1
+        }
+    },
+    "Pâques":{
+        "type1":{
+            "name": "Chocolat",
+            "url": ["https://www.chocolatleroux.com/611-full_default/tablettes-de-chocolat-noir.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/3/3c/Chocolate_Alternative1.jpg",
+            "https://ae01.alicdn.com/kf/HTB1jVNiainrK1RjSsziq6xptpXae.jpg",
+            "https://www.atelierdeschefs.com/media/ingredient-e279-le-chocolat.jpg"],
+            "emoji": "🍫",
+            "points": 10
+        },
+        "type2":{
+            "name": "Lapin de Pâques",
+            "url": ["https://static1.millenium.org/articles/9/36/29/49/@/1324032-acnh-paques-article_image_t-1.png",
+            "https://i-mom.unimedias.fr/2020/12/26/ok-paques-lapins-oeufs-freepik.jpg",
+            "http://ekladata.com/fNR_hiktGqFTBgT_KVDvqnaSlRk.png"],
+            "emoji": "🐰",
+            "points": 3
+        },
+        "type3":{
+            "name": "oeuf en chocolat",
+            "url": ["https://files.meilleurduchef.com/mdc/photo/recette/oeuf-paques-chocolat/oeuf-paques-chocolat-1200.jpg",
+            "https://www.dlys-couleurs.com/1962-big_default/oeufs-en-chocolat-vrac.jpg",
+            "https://www.cuisineaddict.com/11794-product_default/moule-chocolat-oeuf-a-facettes-33-mm-x24-chocolate-world.jpg"],
+            "emoji": "🥚",
+            "points": 1
+        }
+    }
+}
